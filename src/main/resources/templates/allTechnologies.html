@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="ISO-8859-1">
+  <title>All Technologies</title>
+  <link rel="stylesheet" href="../static/css/styles.css" th:href="@{/css/styles.css}"/>
+</head>
+<body>
+  <h2>List of Technologies</h2>
+  <div class="tableDiv">
+    <table>
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Date Added</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr th:each="tech : ${technologies}">
+          <td th:text="${tech.id}">0</td>
+          <td th:text="${tech.name}">Some Tech</td>
+          <td th:text="${tech.description}">Description goes here</td>
+          <td th:text="${tech.dateAdded}">12/31/2099</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

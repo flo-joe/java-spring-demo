@@ -1,0 +1,19 @@
+ul {
+	list-style-type: none;
+}
+ul li {
+	margin-bottom: 10px;
+}
+.tableDiv {
+  overflow: auto;
+}
+.tableDiv table {
+  padding: 10px;
+  border-collapse: collapse;
+}
+.tableDiv table, th, td {
+  border: 1px solid #ccc;
+}
+.tableDiv th, td {
+  padding: 10px;
+}
